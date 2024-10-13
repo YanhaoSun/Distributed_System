@@ -1,0 +1,9 @@
+service/core/Ack.class
+service/core/ProductList.class
+service/core/PurchaseResult.class
+service/core/ClientInfo.class
+service/core/Product.class
+service/core/TransactionResult.class
+service/message/ClientMessage.class
+service/message/ProductMessage.class
+service/core/PurchaseInfo.class
