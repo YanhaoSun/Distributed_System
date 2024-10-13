@@ -1,0 +1,53 @@
+version: '3.9'
+services:
+  broker:
+    build:
+      context: ./broker
+      dockerfile: Dockerfile
+    networks:
+      - quoco-ws
+    ports:
+      - "9000:9000"
+    expose:
+      - 9000
+  dodgygeezers:
+    build:
+      context: ./dodgygeezers
+      dockerfile: Dockerfile
+    networks:
+      - quoco-ws
+    depends_on:
+      - broker
+    links:
+      - broker
+
+  girlsallowed:
+    build:
+      context: ./girlsallowed
+      dockerfile: Dockerfile
+    networks:
+      - quoco-ws
+    depends_on:
+      - broker
+    links:
+      - broker
+
+  auldfellas:
+    build:
+      context: ./auldfellas
+      dockerfile: Dockerfile
+    networks:
+      - quoco-ws
+    depends_on:
+      - broker
+    links:
+      - broker
+  core:
+    build:
+      context: ./core
+      dockerfile: Dockerfile
+    networks:
+      - quoco-ws
+networks:
+  quoco-ws:
+    driver: bridge
