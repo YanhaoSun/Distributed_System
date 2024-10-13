@@ -1,0 +1,41 @@
+version: '3.9'
+services:
+  broker:
+    build:
+      context: ./broker
+      dockerfile: Dockerfile
+    depends_on:
+      - core
+    ports:
+      - "1099:1099"
+  dodgygeezers:
+    build:
+      context: ./dodgygeezers
+      dockerfile: Dockerfile
+    depends_on:
+      - broker
+  girlsallowed:
+    build:
+      context: ./girlsallowed
+      dockerfile: Dockerfile
+    depends_on:
+      - broker
+  auldfellas:
+    build:
+      context: ./auldfellas
+      dockerfile: Dockerfile
+    depends_on:
+      - broker
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    depends_on:
+      - broker
+      - auldfellas
+      - girlsallowed
+      - dodgygeezers
+  core:
+    build:
+      context: ./core
+      dockerfile: Dockerfile
