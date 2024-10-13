@@ -1,0 +1,10 @@
+basic/transaction/Transaction.class
+basic/finance/FinanceRepository.class
+basic/service/BasicService.class
+basic/transaction/TransactionRepository.class
+basic/user/User.class
+basic/controller/BasicServiceController.class
+basic/service/serviceImpl/BasicServiceImpl.class
+basic/user/UserRepository.class
+basic/Application.class
+basic/finance/Finance.class
