@@ -1,0 +1,169 @@
+version: '3.6'
+
+services:
+  activemq:
+    container_name: activemq
+    image: rmohr/activemq:latest
+    ports:
+      - 8161:8161
+      - 61616:61616
+
+  mysql_bond:
+#    image: arm64v8/mysql:latest
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_DATABASE: bond
+    volumes:
+      - ./bond/sql-scripts:/docker-entrypoint-initdb.d
+    ports:
+      - "3307:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "--password=123"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  mysql_fund:
+#    image: arm64v8/mysql:latest
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_DATABASE: fund
+    volumes:
+      - ./fund/sql-scripts:/docker-entrypoint-initdb.d
+    ports:
+      - "3308:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "--password=123"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  mysql_stock:
+#    image: arm64v8/mysql:latest
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_DATABASE: stock
+    volumes:
+      - ./stock/sql-scripts:/docker-entrypoint-initdb.d
+    ports:
+      - "3309:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "--password=123"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  mysql_basic:
+#    image: arm64v8/mysql:latest
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_DATABASE: basic
+    volumes:
+      - ./basic/sql-scripts:/docker-entrypoint-initdb.d
+    ports:
+      - "3310:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "--password=123"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  mysql_login:
+#    image: arm64v8/mysql:latest
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_DATABASE: login
+    volumes:
+      - ./login/sql-scripts:/docker-entrypoint-initdb.d
+    ports:
+      - "3311:3306"
+    healthcheck:
+      test: [ "CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "--password=123" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  bond:
+    build: bond
+    environment:
+      HOST: activemq
+      JDBC_URL: jdbc:mysql://mysql_bond:3306/bond
+      JDBC_USER: root
+      JDBC_PASSWORD: 123
+    depends_on:
+      activemq:
+        condition: service_started
+      mysql_bond:
+        condition: service_healthy
+
+  fund:
+    build: fund
+    environment:
+      HOST: activemq
+      JDBC_URL: jdbc:mysql://mysql_fund:3306/fund
+      JDBC_USER: root
+      JDBC_PASSWORD: 123
+    depends_on:
+      activemq:
+        condition: service_started
+      mysql_fund:
+        condition: service_healthy
+
+  stock:
+    build: stock
+    environment:
+      HOST: activemq
+      JDBC_URL: jdbc:mysql://mysql_stock:3306/stock
+      JDBC_USER: root
+      JDBC_PASSWORD: 123
+    depends_on:
+      activemq:
+        condition: service_started
+      mysql_stock:
+        condition: service_healthy
+
+  broker:
+    build: broker
+    ports:
+      - "8082:8082"
+    environment:
+      HOST: activemq
+    depends_on:
+      activemq:
+        condition: service_started
+
+  basic:
+    build: basic
+    ports:
+      - "8081:8081"
+    environment:
+      DB_HOST: mysql_basic
+      DB_PORT: 3306
+      DB_USER: root
+      DB_PASSWORD: 123
+      BROKER_URL: http://broker:8082
+    depends_on:
+      broker:
+        condition: service_started
+      mysql_basic:
+        condition: service_healthy
+
+
+  login:
+    build: login
+    ports:
+      - "8080:8080"
+    environment:
+      DB_HOST: mysql_login
+      DB_PORT: 3306
+      DB_USER: root
+      DB_PASSWORD: 123
+    depends_on:
+      mysql_login:
+        condition: service_healthy
+
