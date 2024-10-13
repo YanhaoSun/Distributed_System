@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="QuotationServiceUnitTest" time="1.214" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/doraemon/Desktop/DS_Lab/Lab3_Submit/quoco-ws/task2/auldfellas/target/test-classes:/Users/doraemon/Desktop/DS_Lab/Lab3_Submit/quoco-ws/task2/auldfellas/target/classes:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/quoco-ws/core/0.0.1/core-0.0.1.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/com/sun/org/apache/xml/internal/resolver/20050927/resolver-20050927.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/junit/junit/4.12/junit-4.12.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/apache/tomcat/tomcat-catalina/9.0.38/tomcat-catalina-9.0.38.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/apache/tomcat/tomcat-servlet-api/9.0.38/tomcat-servlet-api-9.0.38.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/apache/tomcat/tomcat-jsp-api/9.0.38/tomcat-jsp-api-9.0.38.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/apache/tomcat/tomcat-el-api/9.0.38/tomcat-el-api-9.0.38.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/apache/tomcat/tomcat-juli/9.0.38/tomcat-juli-9.0.38.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/apache/tomcat/tomcat-annotations-api/9.0.38/tomcat-annotations-api-9.0.38.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/apache/tomcat/tomcat-api/9.0.38/tomcat-api-9.0.38.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/apache/tomcat/tomcat-jni/9.0.38/tomcat-jni-9.0.38.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/apache/tomcat/tomcat-coyote/9.0.38/tomcat-coyote-9.0.38.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/apache/tomcat/tomcat-util/9.0.38/tomcat-util-9.0.38.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/apache/tomcat/tomcat-util-scan/9.0.38/tomcat-util-scan-9.0.38.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/apache/tomcat/tomcat-jaspic-api/9.0.38/tomcat-jaspic-api-9.0.38.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/glassfish/metro/webservices-rt/2.4.4/webservices-rt-2.4.4.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/glassfish/metro/webservices-api/2.4.4/webservices-api-2.4.4.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/jakarta/xml/ws/jakarta.xml.ws-api/2.3.3/jakarta.xml.ws-api-2.3.3.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/jakarta/xml/soap/jakarta.xml.soap-api/1.4.2/jakarta.xml.soap-api-1.4.2.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/jakarta/jws/jakarta.jws-api/2.1.0/jakarta.jws-api-2.1.0.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/jmdns/jmdns/3.5.5/jmdns-3.5.5.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://www.azul.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/doraemon/Desktop/DS_Lab/Lab3_Submit/quoco-ws/task2/auldfellas/target/surefire/surefirebooter-20240220202957134_3.jar /Users/doraemon/Desktop/DS_Lab/Lab3_Submit/quoco-ws/task2/auldfellas/target/surefire 2024-02-20T20-29-57_011-jvmRun1 surefire-20240220202957134_1tmp surefire_0-20240220202957134_2tmp"/>
+    <property name="surefire.test.class.path" value="/Users/doraemon/Desktop/DS_Lab/Lab3_Submit/quoco-ws/task2/auldfellas/target/test-classes:/Users/doraemon/Desktop/DS_Lab/Lab3_Submit/quoco-ws/task2/auldfellas/target/classes:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/quoco-ws/core/0.0.1/core-0.0.1.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/com/sun/org/apache/xml/internal/resolver/20050927/resolver-20050927.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/junit/junit/4.12/junit-4.12.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/apache/tomcat/tomcat-catalina/9.0.38/tomcat-catalina-9.0.38.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/apache/tomcat/tomcat-servlet-api/9.0.38/tomcat-servlet-api-9.0.38.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/apache/tomcat/tomcat-jsp-api/9.0.38/tomcat-jsp-api-9.0.38.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/apache/tomcat/tomcat-el-api/9.0.38/tomcat-el-api-9.0.38.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/apache/tomcat/tomcat-juli/9.0.38/tomcat-juli-9.0.38.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/apache/tomcat/tomcat-annotations-api/9.0.38/tomcat-annotations-api-9.0.38.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/apache/tomcat/tomcat-api/9.0.38/tomcat-api-9.0.38.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/apache/tomcat/tomcat-jni/9.0.38/tomcat-jni-9.0.38.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/apache/tomcat/tomcat-coyote/9.0.38/tomcat-coyote-9.0.38.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/apache/tomcat/tomcat-util/9.0.38/tomcat-util-9.0.38.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/apache/tomcat/tomcat-util-scan/9.0.38/tomcat-util-scan-9.0.38.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/apache/tomcat/tomcat-jaspic-api/9.0.38/tomcat-jaspic-api-9.0.38.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/glassfish/metro/webservices-rt/2.4.4/webservices-rt-2.4.4.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/glassfish/metro/webservices-api/2.4.4/webservices-api-2.4.4.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/jakarta/xml/ws/jakarta.xml.ws-api/2.3.3/jakarta.xml.ws-api-2.3.3.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/jakarta/xml/soap/jakarta.xml.soap-api/1.4.2/jakarta.xml.soap-api-1.4.2.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/jakarta/jws/jakarta.jws-api/2.1.0/jakarta.jws-api-2.1.0.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/jmdns/jmdns/3.5.5/jmdns-3.5.5.jar:/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/doraemon"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/doraemon/Desktop/DS_Lab/Lab3_Submit/quoco-ws/task2/auldfellas"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="jdk.vendor.version" value="Zulu 8.76.0.17-CA-macos-aarch64"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/doraemon/Desktop/DS_Lab/Lab3_Submit/quoco-ws/task2/auldfellas/target/surefire/surefirebooter-20240220202957134_3.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/cat.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_402-b06"/>
+    <property name="user.name" value="doraemon"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.0"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/doraemon/Downloads/maven/apache-maven-3.9.3/dependencies"/>
+    <property name="java.vendor.url.bug" value="http://www.azul.com/support/"/>
+    <property name="java.io.tmpdir" value="/var/folders/q9/lw18jmdx7qz7kw1b4t1gyrd40000gn/T/"/>
+    <property name="java.version" value="1.8.0_402"/>
+    <property name="user.dir" value="/Users/doraemon/Desktop/DS_Lab/Lab3_Submit/quoco-ws/task2/auldfellas"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/doraemon/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="java.vm.version" value="25.402-b06"/>
+    <property name="java.specification.maintenance.version" value="5"/>
+    <property name="java.ext.dirs" value="/Users/doraemon/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="connectionTest" classname="QuotationServiceUnitTest" time="0.453">
+    <system-out><![CDATA[| Company: Auld Fellas Ltd.           | Reference: AF001000                 | Price: ￥1,278.00                    |
+|=================================================================================================================|
+]]></system-out>
+    <system-err><![CDATA[二月 20, 2024 8:29:57 下午 com.sun.xml.ws.server.MonitorBase createRoot
+信息: Metro monitoring rootname successfully set to: com.sun.metro:pp=/,type=WSEndpoint,name=QuotationService-QuotationServicePort
+]]></system-err>
+  </testcase>
+</testsuite>
