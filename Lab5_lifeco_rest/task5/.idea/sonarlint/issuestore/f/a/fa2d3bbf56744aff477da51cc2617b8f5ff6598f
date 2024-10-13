@@ -1,0 +1,11 @@
+
+‡
+java:S1319"jThe type of "quotations" should be an interface such as "List" rather than the implementation "ArrayList".(ïÐ¿ò8é¼ð¦à1
+p
+java:S1104"NMake id a static final constant or non-public and provide accessors if needed.(ÍéÌ‘øÿÿÿÿ8é¼ð¦à1
+l
+java:S1104"PMake info a static final constant or non-public and provide accessors if needed.(›»¼48é¼ð¦à1
+s
+java:S1104"VMake quotations a static final constant or non-public and provide accessors if needed.(ïÐ¿ò8é¼ð¦à1
+t
+java:S3008"RRename this field "COUNTER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡œÌÒþÿÿÿÿ8ô¼ð¦à1

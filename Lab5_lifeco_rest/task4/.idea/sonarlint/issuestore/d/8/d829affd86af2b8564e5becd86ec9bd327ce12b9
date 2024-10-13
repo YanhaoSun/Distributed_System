@@ -1,0 +1,18 @@
+
+l
+java:S22595"JA "NullPointerException" could be thrown; "getLocation()" can return null.(›ôÿãýÿÿÿÿ8ñ•Ï¥à1
+X	java:S125 "<This block of commented-out lines of code should be removed.(›Å·Ó8ô•Ï¥à1
+]	java:S125""<This block of commented-out lines of code should be removed.(ë«Ò…ûÿÿÿÿ8ô•Ï¥à1
+N
+java:S3599(",Use another way to initialize this instance.(ü£Çáýÿÿÿÿ8õ•Ï¥à1
+{
+java:S1171("YMove the contents of this initializer to a standard constructor or to field initializers.(ü£Çáýÿÿÿÿ8õ•Ï¥à1
+Z	java:S1065"9Replace this use of System.out or System.err by a logger.(›ôÿãýÿÿÿÿ8ø•Ï¥à1
+X
+java:S1128";Remove this unused import 'java.net.MalformedURLException'.(ªËÞˆ8ù•Ï¥à1
+Z
+java:S1128"8Remove this unused import 'java.net.URISyntaxException'.(Ä®íÿÿÿÿÿ8ù•Ï¥à1
+K
+java:S1128")Remove this unused import 'java.net.URL'.(ñìÁ„üÿÿÿÿ8ù•Ï¥à1
+l
+java:S1128"ORemove this unused import 'org.springframework.web.bind.annotation.GetMapping'.(‡¡‰Ø8ù•Ï¥à1

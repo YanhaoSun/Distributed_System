@@ -1,0 +1,38 @@
+version: '3.9'
+services:
+  broker:
+    build:
+      context: ./broker
+      dockerfile: Dockerfile
+    ports:
+      - 8083:8083
+  dodgygeezers:
+    container_name: dodgygeezers
+    build:
+      context: ./dodgygeezers
+      dockerfile: Dockerfile
+    ports:
+      - 8081:8081
+    depends_on:
+      - broker
+
+  girlsallowed:
+    container_name: girlsallowed
+    build:
+      context: ./girlsallowed
+      dockerfile: Dockerfile
+    ports:
+      - 8082:8082
+    depends_on:
+      - broker
+
+  auldfellas:
+    container_name: auldfellas
+    build:
+      context: ./auldfellas
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    depends_on:
+      - broker
+
